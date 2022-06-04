@@ -1,2 +1,3 @@
-"""The authapi package."""
-__version__ = "0.1.0"
+from authapi.authapi import AuthAPI
+
+__all__ = ["AuthAPI"]

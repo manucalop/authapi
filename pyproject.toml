@@ -1,14 +1,21 @@
-[build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
-
-[project]
+[tool.poetry]
 name = "authapi"
-authors = [{ name = "Manuel Castillo-Lopez", email = "manucalop@gmail.com" }]
-readme = "README.md"
-license = { file = "LICENSE" }
-classifiers = ["License :: OSI Approved :: MIT License"]
-dynamic = ["version", "description"]
+version = "0.1.3"
+description = ""
+authors = ["Manuel Castillo <manucalop@gmail.com>"]
+license = "MIT"
 
-[project.urls]
-Home = "https://github.com/manucalop/authapi"
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^2.1.2"
+requests-oauthlib = "^1.3.1"
+pydantic = "^1.9.1"
+pyOpenSSL = "^22.0.0"
+cffi = "^1.15.0"
+
+[tool.poetry.dev-dependencies]
+cloudops-google-secretmanager = "^0.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
