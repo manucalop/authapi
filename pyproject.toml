@@ -16,6 +16,7 @@ cffi = "^1.15.0"
 [tool.poetry.dev-dependencies]
 cloudops-google-secretmanager = "^0.1.1"
 flake8 = "^4.0.1"
+pytest = "^7.1.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
