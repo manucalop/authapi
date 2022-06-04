@@ -2,6 +2,8 @@
 
 A Simple Python API for Authenticated Operations.
 
+![landing_img](./docs/img/landing.png)
+
 ## Quickstart:
 
 Let's assume you want to interact with Google Ads API.
