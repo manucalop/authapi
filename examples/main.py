@@ -1,5 +1,4 @@
-from authapi import AuthAPI
-from authapi.authdata.google.google import AuthData
+from authapi import AuthAPI, AuthData
 from cloudops_google_secretmanager import SecretManager
 
 
