@@ -11,11 +11,14 @@ app_token = SecretManager(
 auth_data = AuthData(
     client_id="your-client-id",
     client_secret="your-client-secret",
+    authorize_url="https://accounts.google.com/o/oauth2/auth",
+    access_token_url="https://accounts.google.com/o/oauth2/token",
+    scopes=["openid", "email", "profile"],
 )
 
 
 app = AuthAPI(
-    name="Google Ads",
+    name="Auth API: Google",
     auth_data=auth_data,
     token_secret=app_token,
 )
