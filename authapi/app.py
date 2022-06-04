@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from requests_oauthlib import OAuth2Session
 import os
 from typing import Protocol
-from authapi.authdata import AuthData
+from authapi.data import AuthData
 import pathlib
 
 os.environ["OAUTHLIB_RELAX_TOKEN_SCOPE"] = "1"

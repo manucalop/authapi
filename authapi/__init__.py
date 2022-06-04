@@ -1,3 +1,7 @@
-from authapi.authapi import AuthAPI
+from authapi.app import AuthAPI
+from authapi.data import AuthData
 
-__all__ = ["AuthAPI"]
+__all__ = [
+    "AuthAPI",
+    "AuthData",
+]

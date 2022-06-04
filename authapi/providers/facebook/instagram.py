@@ -1,4 +1,4 @@
-from authapi.authdata.facebook import facebook
+from authapi.providers.facebook import facebook
 
 
 class AuthData(facebook.AuthData):

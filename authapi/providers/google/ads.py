@@ -1,4 +1,4 @@
-from authapi.authdata.google import google
+from authapi.providers.google import google
 
 
 class AuthData(google.AuthData):

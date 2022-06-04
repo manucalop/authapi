@@ -1,5 +1,4 @@
-from authapi import AuthAPI
-from authapi.authdata.google.google import AuthData
+from authapi import AuthAPI, AuthData
 from cloudops_google_secretmanager import SecretManager
 
 
@@ -12,6 +11,9 @@ app_token = SecretManager(
 auth_data = AuthData(
     client_id="9831457425-30r1pm7bq343l36rj1d24koov65jliha.apps.googleusercontent.com",
     client_secret="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",
+    authorize_url="https://accounts.google.com/o/oauth2/auth",
+    access_token_url="https://accounts.google.com/o/oauth2/token",
+    scopes=["https://www.googleapis.com/auth/cloud-platform"],
 )
 
 
