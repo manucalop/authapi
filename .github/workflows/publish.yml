@@ -31,8 +31,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
     - name: Build and publish package
-      env:
-        PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}k
       run: |
-        echo $PYPI_PASSWORD
-        poetry publish --build -u __token__ -p "$PYPI_API_TOKEN"
+        echo ${{ secrets.PYPI_API_TOKEN }}
+        echo ${{ secrets.secrets.PYPI_API_TOKEN }}
+        echo $PYPI_API_TOKEN
+        echo "$PYPI_API_TOKEN"
+        poetry publish --build -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
