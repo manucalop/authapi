@@ -30,4 +30,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
     - name: Build and publish package
-      run: poetry publish --build -u manucalop -p ${{ secrets.PYPI_PASSWORD }}
+      env:
+        PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}k
+      run: poetry publish --build -u manucalop -p $PYPI_PASSWORD  
