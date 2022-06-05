@@ -13,7 +13,7 @@ class SecretProtocol(Protocol):
     def pull(self) -> dict:
         ...
 
-    def push(self, data: dict) -> None:
+    def push(self, payload: dict) -> None:
         ...
 
 
