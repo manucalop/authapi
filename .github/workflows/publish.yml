@@ -32,4 +32,6 @@ jobs:
     - name: Build and publish package
       env:
         PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}k
-      run: poetry publish --build -u manucalop -p "$PYPI_PASSWORD"
+      run: |
+        echo $PYPI_PASSWORD
+        poetry publish --build -u manucalop -p ${PYPI_PASSWORD}
