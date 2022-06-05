@@ -1,5 +1,5 @@
 from pydantic import BaseModel, root_validator
-from typing import Optional
+from typing import Optional, Any
 
 
 class AuthData(BaseModel):
@@ -13,6 +13,7 @@ class AuthData(BaseModel):
     state: Optional[str] = None
     access_token: Optional[str] = None
     refresh_token: Optional[str] = None
+    extra: Optional[dict[str, Any]] = None
 
     @root_validator
     def default_to_access_token(cls, values):
