@@ -61,6 +61,7 @@ class AuthAPI(Flask):
             token_url=self.auth_data.access_token_url,
             client_secret=self.auth_data.client_secret,
             authorization_response=request.url,
+            include_client_id=True,
         )
         self.token_secret.push(self.auth.token)
 
