@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "authapi"
 version = "0.1.11"
-description = ""
-authors = ["Manuel Castillo <manucalop@gmail.com>"]
+description = "OAuth2 Code Grant Authentication API"
+authors = ["Manuel Castillo-Lopez <manucalop@gmail.com>"]
 license = "MIT"
+repository = "https://github.com/manucalop/authapi"
 
 [tool.poetry.dependencies]
 python = "^3.9"
