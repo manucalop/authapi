@@ -2,7 +2,7 @@
 
 A Simple Python API for Authenticated Operations.
 
-![landing_img](./docs/img/landing.png)
+![landing_img](https://raw.githubusercontent.com/manucalop/authapi/main/docs/img/landing.png)
 
 ## Quickstart:
 
