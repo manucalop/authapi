@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "authapi"
-version = "0.1.13"
+version = "0.1.14"
 description = "OAuth2 Code Grant Authentication API"
 authors = ["Manuel Castillo-Lopez <manucalop@gmail.com>"]
 license = "MIT"
