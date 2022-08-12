@@ -64,4 +64,3 @@ if __name__ == "__main__":
 ```
 
 3. Run `python main.py` and visit [https://127.0.0.1:5000/](https://127.0.0.1:5000/) to start the authentication process.
-
