@@ -1,7 +1,9 @@
 import unittest
+
+from cloudops.secret_manager.google import GoogleSecret
+
 from authapi import AuthAPI
 from authapi.providers.google.ads import AuthData
-from cloudops_google_secretmanager import SecretManager
 
 
 class DummySecret:

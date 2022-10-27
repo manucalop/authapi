@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "authapi"
-version = "0.1.14"
+version = "0.1.15"
 description = "OAuth2 Code Grant Authentication API"
 authors = ["Manuel Castillo-Lopez <manucalop@gmail.com>"]
 license = "MIT"
@@ -16,7 +16,7 @@ pyOpenSSL = "^22.0.0"
 cffi = "^1.15.0"
 
 [tool.poetry.dev-dependencies]
-cloudops-google-secretmanager = "^0.1.1"
+cloudops-secret-manager-google = "^0.1.0"
 flake8 = "^4.0.1"
 pytest = "^7.1.2"
 

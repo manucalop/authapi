@@ -1,8 +1,8 @@
+from cloudops.secret_manager.google import GoogleSecret
+
 from authapi import AuthAPI, AuthData
-from cloudops_google_secretmanager import SecretManager
 
-
-app_token = SecretManager(
+app_token = GoogleSecret(
     project_id="your-project-id",
     secret_id="your-secret-id",
 )
